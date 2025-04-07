@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'ATNPNoto';
+    src: url('assets/fonts/atnp-noto.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SitelenPonaX';
+    src: url('assets/fonts/ajn-sitelen-pona-x.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CSDegita';
+    src: url('assets/fonts/CsdegitadrawnRegularDemo-XGJqP.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MintSoda';
+    src: url('assets/fonts/MintsodaLimeGreen13X16Regular-KVvzA.ttf') format('opentype');
+}
+
+body {
+    background-color: black;
+    font-family: 'SitelenPonaX', sans-serif;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-top:220px;
+}
+
+.logo {
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing:2px;
+    font-size:64px;
+    font-family: 'ATNPNoto';
+    transition: color 0.4s ease;
+    margin-bottom:-35px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: rgb(121, 175, 198);
+}
+
+.char img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    padding-top:125px;
+    margin-bottom: -70px;
+}
+
+.homeicon img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width:20px;
+}
+
+.homeicon a {
+    all: unset;
+    cursor: pointer;
+}
+
+.icons img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60px;
+}
+
+a {
+    color:white;
+    font-family: 'MintSoda';
+    font-weight: bold;
+    font-size:24px;
+    letter-spacing: 1.5px;
+    display:block;
+    text-align: center;
+    padding:10px;
+    margin-top:-50px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+a:hover {
+    color: rgb(121, 175, 198);
+}
+
+footer a {
+    font-family: 'ATNPNoto';
+    font-size: 13px;
+    letter-spacing:1px;
+}
+
+b {
+    color:white;
+    font-family: 'ATNPNoto';
+    transition: color 0.4s ease;
+}
+
+b:hover
+{
+    color: rgb(121, 175, 198);
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.foldericons img {
+    width: 40px;
+    height: auto;
+}
+
+.folder-icon {
+    width: 35px;
+    height: auto;
+    margin-top: -5px;
+}
+
+.page-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

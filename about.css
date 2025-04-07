@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'CIGameDev';
+    src: url('assets/fonts/CiGamedevRegular-ovq3z.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SitelenPonaX';
+    src: url('assets/fonts/ajn-sitelen-pona-x.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CSDegita';
+    src: url('assets/fonts/CsdegitadrawnRegularDemo-XGJqP.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MintSoda';
+    src: url('assets/fonts/MintsodaLimeGreen13X16Regular-KVvzA.ttf') format('opentype');
+}
+
+body {
+    background-color: black;
+}
+
+.homeicon img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width:20px;
+}
+
+.homeicon a {
+    all: unset;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'CSDegita';
+    color:white;
+    text-align: center;
+}
+
+.name p {
+    padding-top:5px;
+    font-family: 'SitelenPonaX';
+    color:white;
+    text-align: center;
+    font-size: 54px;
+}
+
+.name:hover {
+    cursor:pointer;
+}
+
+.name {
+    margin-bottom:-25px;
+}
+
+.summary p {
+    font-size:15px;
+    margin-top:25px;
+    color:rgb(220, 220, 220);
+    
+}
+
+.summary {
+    width:500px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:35px;
+}
+
+.skills p {
+    font-size:15px;
+    color:rgb(216, 247, 255);
+}
+
+.projects {
+    margin-top:35px;
+}
+
+.projects a {
+    text-decoration: none;
+    color:rgb(253, 199, 244); 
+}
+
+.projectsblurb {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.sound a {
+    color:rgb(210, 255, 212);
+    text-decoration: none;
+}
+
+.soundblurb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+
+.projects:hover ~ .projectsblurb,
+.sound:hover ~ .soundblurb {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.projects.active ~ .projectsblurb,
+.sound.active ~ .soundblurb {
+    opacity: 1;
+    max-height: 500px;
+}
